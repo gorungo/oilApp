@@ -1,0 +1,28 @@
+.card {
+  border-radius: 1rem;
+}
+
+h1.main-title {
+  font-size: 40px;
+  font-weight: bold;
+}
+.center-block {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.h-100vh {
+  height: 100vh;
+}
+.h-100vh-80 {
+  height: calc( 100vh - 80px);
+}
+
+.catalog__title {
+  display: flex;
+  align-items: center;
+}
+.catalog__product-count{
+  color: var(--secondary);
+  font-size: 28px;
+}
