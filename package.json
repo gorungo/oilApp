@@ -1,12 +1,12 @@
 {
-  "name": "oilApp",
+  "name": "oil-app",
   "version": "1.0.0",
   "private": true,
   "scripts": {
-    "dev": "nuxt",
-    "build": "nuxt build",
-    "start": "nuxt start",
-    "generate": "nuxt generate",
+    "dev": "node_modules/nuxt/bin/nuxt.js",
+    "build": "node_modules/nuxt/bin/nuxt.js build",
+    "start": "node_modules/nuxt/bin/nuxt.js start",
+    "generate": "node_modules/nuxt/bin/nuxt.js generate",
     "lint:js": "eslint --ext \".js,.vue\" --ignore-path .gitignore .",
     "lint:prettier": "prettier --check .",
     "lint": "yarn lint:js && yarn lint:prettier",
