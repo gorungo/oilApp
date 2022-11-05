@@ -2,22 +2,22 @@
   <div class="container center-block text-center h-100vh-80 flex-column">
     <h1 class="main-title">Автомобильные масла<br/> по выгодным ценам</h1>
     <div class="row mt-4 product-presentation">
-      <div class="col-6 col-md-3">
+      <div class="col-6 col-md-3 mb-2">
         <div class="card card-body">
           <img src="https://mcmauto.ru/storage/img/thumb/626100c01ac2208eb81d3bfc43227a54.jpg">
         </div>
       </div>
-      <div class="col-6 col-md-3">
+      <div class="col-6 col-md-3 mb-2">
         <div class="card card-body">
           <img src="https://mcmauto.ru/storage/img/thumb/a7959350fd51cf1ed17e3c356094d1e3.jpg">
         </div>
       </div>
-      <div class="col-6 col-md-3">
+      <div class="col-6 col-md-3 mb-2">
         <div class="card card-body">
           <img src="https://mcmauto.ru/storage/img/thumb/c1d3fcf5e3bd56e09a85d44c1348c6e6.jpg">
         </div>
       </div>
-      <div class="col-6 col-md-3">
+      <div class="col-6 col-md-3 mb-2">
         <div class="card card-body">
           <img src="https://mcmauto.ru/storage/img/thumb/ab6d2f6cf3d4c40438d5c63d3b1fb320.jpg">
         </div>
