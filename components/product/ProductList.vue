@@ -1,5 +1,5 @@
 <template>
-  <div class="mt-3">
+  <div class="mt-3 w-100">
     <div v-if="products.length" class="list">
       <ProductItem
         v-for="product in products"
@@ -58,5 +58,6 @@ export default {
     display: flex;
     flex-direction: column;
     row-gap: 1rem;
+    width: 100%;
   }
 </style>

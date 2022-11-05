@@ -3,12 +3,15 @@
     <div class="list-item__image-wrap">
       <img :src="imagePath" class="list-item__image" alt="">
     </div>
-    <div class="list-item__title">
-      {{product.name}}
+    <div class="list-item__info">
+      <div class="list-item__title">
+        {{product.name}}
+      </div>
+      <div v-if="cost > 0" class="list-item__price">
+        <span>{{cost}} ₽</span>
+      </div>
     </div>
-    <div v-if="cost > 0" class="list-item__price">
-      <span>{{cost}} ₽</span>
-    </div>
+
   </div>
 </template>
 <script>
@@ -43,12 +46,13 @@ export default {
   background-color: #f8f8f8;
   border-radius: 1rem;
   gap: 1.5rem;
+  width: 100%;
 }
 .list-item__image-wrap{
-  width: 200px;
-  min-width: 200px;
-  height: 200px;
-  max-height: 200px;
+  width: 100px;
+  min-width: 100px;
+  height: 100px;
+  max-height: 100px;
   background: white;
   border-radius: 1rem;
   padding: 0.25rem;
@@ -58,6 +62,12 @@ export default {
   height: 100%;
   object-fit: contain;
   border-radius: 1rem;
+}
+.list-item__info{
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  justify-content: space-between;
 }
 .list-item__title{
   flex-grow: 1;
@@ -77,6 +87,17 @@ export default {
   padding: 0.25rem;
   white-space: nowrap;
   border-radius: 0.5rem;
+}
+@media (min-width: 576px) {
+  .list-item__image-wrap {
+    width: 200px;
+    min-width: 200px;
+    height: 200px;
+    max-height: 200px;
+  }
+  .list-item__info{
+    flex-direction: row;
+  }
 }
 
 </style>

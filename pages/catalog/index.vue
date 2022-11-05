@@ -6,6 +6,7 @@
 </template>
 
 <script>
+import {mapActions} from "vuex"
 import CategoryListMain from "~/components/category/CategoryListMain"
 
 export default {
@@ -14,5 +15,11 @@ export default {
   data: () => ({
 
 	}),
+  mounted() {
+    this.clearProducts()
+  },
+  methods: {
+    ...mapActions('product', ['clearProducts']),
+  }
 }
 </script>

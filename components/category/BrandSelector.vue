@@ -37,6 +37,7 @@ export default {
 .brand-list{
   display: flex;
   gap: 0.5rem;
+  overflow-x: scroll;
 }
 .brand-list a{
   text-decoration: none;

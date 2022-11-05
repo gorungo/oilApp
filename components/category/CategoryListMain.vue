@@ -1,6 +1,6 @@
 <template>
   <div class="row categories-list">
-    <div v-for="(cat, i) in categories" :key="i" class="col-4 category">
+    <div v-for="(cat, i) in categories" :key="i" class="col-12 col-sm-4 category mb-2">
       <div class="card card-body">
         <div class="category__name">{{cat.name}}</div>
         <template v-if="cat.children">

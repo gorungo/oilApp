@@ -3,7 +3,10 @@
     <div class="pagination__left">
       <div class="pagination__page pagination__prev-all">
         <nuxt-link :to="{ query: { ... $route.query, page: 1 }}" aria-label="Первая" class="page-link--with-arrow" @click="changePage(1)">
-          Первая
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M5.57544 12L11.5858 5.98956L13.0001 7.40378L8.40387 12L13.0001 16.5962L11.5858 18.0104L5.57544 12Z" fill="#2E3A59"/>
+            <path d="M11.0001 12L17.0105 5.98956L18.4247 7.40378L13.8285 12L18.4247 16.5962L17.0105 18.0104L11.0001 12Z" fill="#2E3A59"/>
+          </svg>
         </nuxt-link>
       </div>
       <div class="pagination__page pagination__prev">
@@ -14,7 +17,9 @@
             class="page-link--with-arrow"
             @click="changePage(currentPage-1)"
         >
-          Предыдущая
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M14.298 5.98962L8.2876 12L14.298 18.0104L15.7122 16.5962L11.116 12L15.7122 7.40384L14.298 5.98962Z" fill="currentcolor"/>
+          </svg>
         </nuxt-link>
       </div>
     </div>
@@ -79,7 +84,9 @@
             class="page-link--with-arrow"
             @click="changePage(currentPage+1)"
         >
-          Следующая
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M9.70181 18.0104L15.7122 12L9.70181 5.98956L8.2876 7.40378L12.8838 12L8.2876 16.5962L9.70181 18.0104Z" fill="currentcolor"/>
+          </svg>
         </nuxt-link>
       </div>
       <div class="pagination__page pagination__next-all">
@@ -88,7 +95,10 @@
                   class="page-link--with-arrow"
                   @click="changePage(paginationItems)"
         >
-          Последняя
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M18.4247 12L12.4143 18.0104L11.0001 16.5962L15.5963 12L11.0001 7.40378L12.4143 5.98956L18.4247 12Z" fill="currentcolor"/>
+            <path d="M13.0001 12L6.98965 18.0104L5.57544 16.5962L10.1716 12L5.57544 7.40378L6.98966 5.98956L13.0001 12Z" fill="currentcolor"/>
+          </svg>
         </nuxt-link>
       </div>
     </div>

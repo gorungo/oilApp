@@ -25,6 +25,9 @@ export const mutations = {
 }
 
 export const actions = {
+  clearProducts({commit}){
+    commit('setProducts', [])
+  },
   async fetchProducts({commit}, params) {
     commit('setProducts', [])
     const url = `products`
