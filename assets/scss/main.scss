@@ -27,6 +27,21 @@ h1.main-title {
   font-size: 28px;
 }
 
+.product-presentation{
+
+  img{
+    height: 100px;
+  }
+}
+
+@media (min-width: 576px) {
+  .product-presentation{
+    img{
+      height: 150px;
+    }
+  }
+}
+
 .is-loading{
   color: transparent;
   background: linear-gradient(100deg, #f8f8f8 30%, #e3f1ff 50%, #f8f8f8 70%);
