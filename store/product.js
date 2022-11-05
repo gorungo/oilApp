@@ -27,7 +27,7 @@ export const mutations = {
 export const actions = {
   async fetchProducts({commit}, params) {
     commit('setProducts', [])
-    const url = `${path.apiUrl}/products`
+    const url = `products`
     await this.$axios.get(url, {
       params
     }).then(res => {
@@ -40,7 +40,7 @@ export const actions = {
 
   async fetchBrands({commit}, params) {
     commit('setBrands', [])
-    const url = `${path.apiUrl}/products/brands`
+    const url = `products/brands`
     await this.$axios.get(url, {
       params
     }).then(res => {
