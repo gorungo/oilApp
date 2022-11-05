@@ -12,6 +12,7 @@
       v-if="activeCategory"
       :products="products"
       :total="total"
+      :loading="$fetchState.pending"
       :page="page"
     />
   </div>

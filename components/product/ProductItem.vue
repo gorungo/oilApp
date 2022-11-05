@@ -37,9 +37,10 @@ export default {
 </script>
 <style>
 .list-item {
+  min-height: 232px;
   display: flex;
   padding: 1rem;
-  background: #f8f8f8;
+  background-color: #f8f8f8;
   border-radius: 1rem;
   gap: 1.5rem;
 }
@@ -77,4 +78,5 @@ export default {
   white-space: nowrap;
   border-radius: 0.5rem;
 }
+
 </style>

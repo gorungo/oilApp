@@ -1,4 +1,4 @@
-import * as path from "~/js/path";
+
 
 export const state = () => ({
   products: [],

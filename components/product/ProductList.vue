@@ -13,7 +13,19 @@
         :limit="30"
       />
     </div>
-    <div v-if="!products.length">
+    <div v-if="loading" class="list">
+      <div v-for="i in 6" class="is-loading list-item" :key="i">
+        <div class="list-item__image-wrap">
+        </div>
+        <div class="list-item__title">
+
+        </div>
+        <div class="list-item__price">
+          <span>&nbsp;</span>
+        </div>
+      </div>
+    </div>
+    <div v-if="!loading && !products.length">
       Нет доступных товаров
     </div>
   </div>
