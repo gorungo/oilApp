@@ -1,18 +1,27 @@
 <template>
-  <div class="row categories-list">
-    <div v-for="(cat, i) in categories" :key="i" class="col-12 col-sm-4 category mb-2">
-      <div class="card card-body">
-        <div class="category__name">{{cat.name}}</div>
-        <template v-if="cat.children">
-          <div v-for="(subcat, k) in cat.children" :key="k" class="subcategory">
-            <nuxt-link :to="`/catalog/${cat.slug}/${subcat.slug}`">
-              <span>{{subcat.name}}</span>
-              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M15.2929 14.2929L16 15L19 12L16 9L15.2929 9.70711L17.0858 11.5L5 11.5V12.5L17.0857 12.5L15.2929 14.2929Z" fill="currentcolor"/>
-              </svg>
-            </nuxt-link>
-          </div>
-        </template>
+  <div>
+    <div v-if="categories.length" class="row categories-list">
+      <div v-for="(cat, i) in categories" :key="i" class="col-12 col-sm-4 category mb-2">
+        <div class="card card-body">
+          <div class="category__name">{{cat.name}}</div>
+          <template v-if="cat.children">
+            <div v-for="(subcat, k) in cat.children" :key="k" class="subcategory">
+              <nuxt-link :to="`/catalog/${cat.slug}/${subcat.slug}`">
+                <span>{{subcat.name}}</span>
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M15.2929 14.2929L16 15L19 12L16 9L15.2929 9.70711L17.0858 11.5L5 11.5V12.5L17.0857 12.5L15.2929 14.2929Z" fill="currentcolor"/>
+                </svg>
+              </nuxt-link>
+            </div>
+          </template>
+        </div>
+      </div>
+    </div>
+    <div v-else class="row categories-list">
+      <div v-for="(cat, i) in 3" :key="i" class="col-12 col-sm-4 category mb-2">
+        <div class="card card-body is-loading" style="min-height: 50vh;">
+          <div class="category__name">&nbsp;</div>
+        </div>
       </div>
     </div>
   </div>
@@ -22,6 +31,10 @@
 import {mapState} from 'vuex'
 export default {
   name: "CategoryListMain",
+  props: {
+    loading: Boolean
+  },
+
   data: () => ({
 
   }),
